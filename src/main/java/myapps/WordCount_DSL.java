@@ -34,7 +34,7 @@ public class WordCount_DSL {
 
     Properties props  = new Properties();
     try {
-      props = readConfig("client.properties");
+      props = Example.readConfig("client.properties");
     } catch (IOException e) {
       e.printStackTrace();
     }
@@ -76,21 +76,6 @@ public class WordCount_DSL {
       System.exit(1);
     }
     System.exit(0);
-  }
-
-  public static Properties readConfig(final String configFile) throws IOException {
-    // reads the client configuration from client.properties
-    // and returns it as a Properties object
-    if (!Files.exists(Paths.get(configFile))) {
-      throw new IOException(configFile + " not found.");
-    }
-
-    final Properties config = new Properties();
-    try (InputStream inputStream = new FileInputStream(configFile)) {
-      config.load(inputStream);
-    }
-
-    return config;
   }
 
   public static void startProduceCronjob(String topic, Properties config) {

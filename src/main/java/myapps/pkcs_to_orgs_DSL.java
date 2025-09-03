@@ -1,35 +1,39 @@
 package myapps;
 
-import java.lang.System;
-import java.io.*;
-import java.time.*;
-import java.util.Arrays;
-import java.util.Locale;
-import java.util.Properties;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.Producer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.*;
+import org.apache.kafka.common.utils.Bytes;
+import org.apache.kafka.streams.*;
+import org.apache.kafka.streams.kstream.*;
+import org.apache.kafka.streams.state.KeyValueStore;
+import org.apache.kafka.streams.state.SessionStore;
+
+import java.io.IOException;
+import java.time.Duration;
+import java.util.*;
 import java.util.concurrent.CountDownLatch;
 
-import org.apache.kafka.clients.consumer.*;
-import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.common.serialization.*;
-import org.apache.kafka.common.serialization.Serdes;
-import org.apache.kafka.common.utils.Bytes;
-import org.apache.kafka.streams.KafkaStreams;
-import org.apache.kafka.streams.StreamsBuilder;
-import org.apache.kafka.streams.StreamsConfig;
-import org.apache.kafka.streams.Topology;
-import org.apache.kafka.streams.kstream.KStream;
-import org.apache.kafka.streams.kstream.Materialized;
-import org.apache.kafka.streams.kstream.Produced;
-import org.apache.kafka.streams.state.KeyValueStore;
-
-public class WordCount_DSL {
+public class pkcs_to_orgs_DSL {
 
   private static volatile boolean running = true;
 
-  public static void main(String[] args) throws Exception {
+  private static final String inputTopic = "orgs";
+  private static final String outputTopic = "pkcs_to_orgs";
 
-    String inputTopic = "word_stream_in";
-    String outputTopic = "word_count_out";
+  private static final String[] orgs = {"Org1", "Org2", "Org3"};
+  private static final String[] pkcs = {"Pkc1", "Pkc2", "Pkc3"};
+  private static final Random random = new Random(0);
+
+  private static final Serde<List<String>> listSerde = Serdes.ListSerde(ArrayList.class, Serdes.String());
+
+  public static void main(String[] args) throws Exception {
 
     Properties props  = new Properties();
     try {
@@ -38,21 +42,37 @@ public class WordCount_DSL {
       e.printStackTrace();
     }
 
-    props.put(StreamsConfig.APPLICATION_ID_CONFIG, "streams-wordcount");
+    props.put(StreamsConfig.APPLICATION_ID_CONFIG, "streams-pkcs_to_orgs-dsl");
     props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
     props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
 
     final StreamsBuilder builder = new StreamsBuilder();
 
     KStream<String, String> source = builder.stream(inputTopic);
-    source.flatMapValues(value -> Arrays.asList(value.toLowerCase(Locale.getDefault()).split("\\W+")))
-        .groupBy((key, value) -> value)
-        .count(Materialized.<String, Long, KeyValueStore<Bytes, byte[]>>as("counts-store"))
+    source
+        .map((key, value) -> KeyValue.pair(value, key))
+        .groupByKey()
+        .aggregate(
+            ArrayList::new,
+            (pkcId, orgId, orgList) -> {
+              System.out.printf("orgId = %s, pkcId = %s%n", orgId, pkcId);
+              if (!orgList.contains(orgId)) {
+                orgList.add(orgId);
+              }
+              return orgList;
+            },
+            Materialized.<String, List<String>, KeyValueStore<Bytes, byte[]>>as(
+                    "pkcs-to-orgs-store")
+                .withKeySerde(Serdes.String())
+                .withValueSerde(listSerde))
         .toStream()
-        .to(outputTopic, Produced.with(Serdes.String(), Serdes.Long()));
+        .mapValues(Object::toString)
+        .to(outputTopic, Produced.with(Serdes.String(), Serdes.String()));
+
 
     final Topology topology = builder.build();
     final KafkaStreams streams = new KafkaStreams(topology, props);
+    streams.cleanUp();
     final CountDownLatch latch = new CountDownLatch(1);
 
     startProduceCronjob(inputTopic, props);
@@ -85,13 +105,12 @@ public class WordCount_DSL {
 
     Thread produceCronjob = new Thread(() -> {
       while (running) {
-        System.out.println("Producing record...");
+        String randomOrg = orgs[random.nextInt(orgs.length)];
+        String randomPkc = pkcs[random.nextInt(pkcs.length)];
+        System.out.printf("Producing record (org=%s, pkc=%s)...%n", randomOrg, randomPkc);
         try {
-          String key = "a_key";
-          String value = "a_value";
-
-          producer.send(new ProducerRecord<>(topic, key, value));
-          Thread.sleep(10000); // Simulate work
+          producer.send(new ProducerRecord<>(topic, randomOrg, randomPkc));
+          Thread.sleep(5000); // Simulate work
         } catch (Exception e) {
           System.out.println("Produce cronjob interrupted.");
           e.printStackTrace();
@@ -120,10 +139,10 @@ public class WordCount_DSL {
 
   public static void startConsumeCronjob(String topic, Properties config) {
     // sets the group ID, offset and message deserializers
-    config.put(ConsumerConfig.GROUP_ID_CONFIG, "java-group-1");
+    config.put(ConsumerConfig.GROUP_ID_CONFIG, "pkcToOrg-group");
     config.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
     config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-    config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, LongDeserializer.class.getName());
+    config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 
     // creates a new consumer instance and subscribes to messages from the topic
     KafkaConsumer<String, String> consumer = new KafkaConsumer<>(config);
@@ -135,9 +154,8 @@ public class WordCount_DSL {
           // polls the consumer for new messages and prints them
           ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
           for (ConsumerRecord<String, String> record : records) {
-            System.out.println(
-                String.format(
-                    "Consumed message from topic %s: key = %s value = %s", topic, record.key(), record.value()));
+            System.out.printf(
+                "Consumed message from topic %s: key = %s value = %s%n", topic, record.key(), record.value());
           }
         } catch (Exception e) {
           System.out.println("Consume cronjob interrupted.");

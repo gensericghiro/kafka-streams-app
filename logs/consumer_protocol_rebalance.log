@@ -1,0 +1,80 @@
+WARN	2025-09-04T17:39:54,843	229	myapps.RebalanceExperiments	[main]	This is a test
+INFO	2025-09-04T17:39:54,868	254	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-04T17:39:54,876	262	org.apache.kafka.clients.producer.KafkaProducer	[main]	[Producer clientId=ccloud-java-client] Instantiated an idempotent producer.
+INFO	2025-09-04T17:39:54,913	299	org.apache.kafka.common.security.authenticator.AbstractLogin	[main]	Successfully logged in.
+INFO	2025-09-04T17:39:54,965	351	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka version: 4.0.0
+INFO	2025-09-04T17:39:54,966	352	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka commitId: 985bc99521dd22bb
+INFO	2025-09-04T17:39:54,966	352	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka startTimeMs: 1757021994964
+INFO	2025-09-04T17:39:54,977	363	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-04T17:39:54,985	371	org.apache.kafka.common.config.AbstractConfig	[main]	These configurations '[acks, key.serializer, value.serializer]' were supplied but are not used yet.
+INFO	2025-09-04T17:39:54,985	371	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka version: 4.0.0
+INFO	2025-09-04T17:39:54,985	371	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka commitId: 985bc99521dd22bb
+INFO	2025-09-04T17:39:54,985	371	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka startTimeMs: 1757021994985
+INFO	2025-09-04T17:39:54,987	373	org.apache.kafka.clients.consumer.internals.AsyncKafkaConsumer	[main]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Subscribed to topic(s): rebalance_experiments
+INFO	2025-09-04T17:39:55,067	453	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member Az15fLi4S3SFkDGHG6M1ww with epoch 0 transitioned from UNSUBSCRIBED to JOINING.
+INFO	2025-09-04T17:39:56,153	1539	org.apache.kafka.clients.Metadata	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-04T17:39:56,153	1539	org.apache.kafka.clients.Metadata	[kafka-producer-network-thread | ccloud-java-client]	[Producer clientId=ccloud-java-client] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-04T17:39:56,153	1539	org.apache.kafka.clients.producer.internals.TransactionManager	[kafka-producer-network-thread | ccloud-java-client]	[Producer clientId=ccloud-java-client] ProducerId set to 2582042 with epoch 0
+INFO	2025-09-04T17:39:56,154	1540	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[kafka-producer-network-thread | ccloud-java-client]	Client telemetry registered with client instance id: 6X--CeBLQh6U7FwBPa3dgg
+INFO	2025-09-04T17:39:56,156	1542	org.apache.kafka.clients.consumer.internals.CoordinatorRequestManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Discovered group coordinator Coordinator(key='java-group-1', nodeId=0, host='b0-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud', port=9092, errorCode=0, errorMessage='')
+INFO	2025-09-04T17:39:56,158	1544	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[consumer_background_thread]	Client telemetry registered with client instance id: DhXlLcSFRZSdGZljdac8Bg
+INFO	2025-09-04T17:39:57,258	2644	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member Az15fLi4S3SFkDGHG6M1ww with epoch 1 transitioned from JOINING to RECONCILING.
+INFO	2025-09-04T17:39:57,260	2646	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Reconciling assignment with local epoch 0
+	Member:                                    Az15fLi4S3SFkDGHG6M1ww
+	Assigned partitions:                       [rebalance_experiments-0, rebalance_experiments-1, rebalance_experiments-2, rebalance_experiments-3, rebalance_experiments-4, rebalance_experiments-5]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [rebalance_experiments-0, rebalance_experiments-1, rebalance_experiments-2, rebalance_experiments-3, rebalance_experiments-4, rebalance_experiments-5]
+	Revoked partitions (owned - assigned):     []
+
+INFO	2025-09-04T17:39:57,261	2647	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member Az15fLi4S3SFkDGHG6M1ww with epoch 1 transitioned from RECONCILING to ACKNOWLEDGING.
+INFO	2025-09-04T17:39:57,262	2648	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member Az15fLi4S3SFkDGHG6M1ww with epoch 1 transitioned from ACKNOWLEDGING to STABLE.
+INFO	2025-09-04T17:39:57,391	2777	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-0 to the committed offset FetchPosition{offset=183, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b14-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 14 rack: 2 isFenced: false)], epoch=0}}
+INFO	2025-09-04T17:39:57,391	2777	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-1 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 6 rack: 0 isFenced: false)], epoch=0}}
+INFO	2025-09-04T17:39:57,391	2777	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b12-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 12 rack: 0 isFenced: false)], epoch=0}}
+INFO	2025-09-04T17:39:57,391	2777	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-5 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 10 rack: 1 isFenced: false)], epoch=0}}
+INFO	2025-09-04T17:39:57,391	2777	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-2 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b4-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 4 rack: 1 isFenced: false)], epoch=0}}
+INFO	2025-09-04T17:39:57,391	2777	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b2-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 2 rack: 2 isFenced: false)], epoch=0}}
+WARN	2025-09-04T17:40:04,997	10383	myapps.RebalanceExperiments	[main]	Starting new consumer to see the effect of a rebalance
+INFO	2025-09-04T17:40:04,998	10384	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-04T17:40:04,999	10385	org.apache.kafka.common.config.AbstractConfig	[main]	These configurations '[acks, key.serializer, value.serializer]' were supplied but are not used yet.
+INFO	2025-09-04T17:40:04,999	10385	org.apache.kafka.common.utils.AppInfoParser	[main]	The mbean of App info: [kafka.consumer], id: [ccloud-java-client] already exists, so skipping a new mbean creation.
+INFO	2025-09-04T17:40:04,999	10385	org.apache.kafka.clients.consumer.internals.AsyncKafkaConsumer	[main]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Subscribed to topic(s): rebalance_experiments
+INFO	2025-09-04T17:40:05,002	10388	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member hL-Q1CtfSxqafOEOKRMwHg with epoch 0 transitioned from UNSUBSCRIBED to JOINING.
+INFO	2025-09-04T17:40:05,962	11348	org.apache.kafka.clients.Metadata	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-04T17:40:05,962	11348	org.apache.kafka.clients.consumer.internals.CoordinatorRequestManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Discovered group coordinator Coordinator(key='java-group-1', nodeId=0, host='b0-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud', port=9092, errorCode=0, errorMessage='')
+INFO	2025-09-04T17:40:05,963	11349	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[consumer_background_thread]	Client telemetry registered with client instance id: V5fjP0nJR8-V-wdC-6S8qw
+INFO	2025-09-04T17:40:06,918	12304	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member hL-Q1CtfSxqafOEOKRMwHg with epoch 2 transitioned from JOINING to RECONCILING.
+INFO	2025-09-04T17:40:06,918	12304	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Reconciling assignment with local epoch 0
+	Member:                                    hL-Q1CtfSxqafOEOKRMwHg
+	Assigned partitions:                       []
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       []
+	Revoked partitions (owned - assigned):     []
+
+INFO	2025-09-04T17:40:06,918	12304	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member hL-Q1CtfSxqafOEOKRMwHg with epoch 2 transitioned from RECONCILING to ACKNOWLEDGING.
+INFO	2025-09-04T17:40:06,919	12305	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member hL-Q1CtfSxqafOEOKRMwHg with epoch 2 transitioned from ACKNOWLEDGING to STABLE.
+INFO	2025-09-04T17:40:07,389	12775	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member Az15fLi4S3SFkDGHG6M1ww with epoch 1 transitioned from STABLE to RECONCILING.
+INFO	2025-09-04T17:40:07,633	13019	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Reconciling assignment with local epoch 1
+	Member:                                    Az15fLi4S3SFkDGHG6M1ww
+	Assigned partitions:                       [rebalance_experiments-0, rebalance_experiments-1, rebalance_experiments-2]
+	Current owned partitions:                  [rebalance_experiments-0, rebalance_experiments-1, rebalance_experiments-2, rebalance_experiments-3, rebalance_experiments-4, rebalance_experiments-5]
+	Added partitions (assigned - owned):       []
+	Revoked partitions (owned - assigned):     [rebalance_experiments-3, rebalance_experiments-4, rebalance_experiments-5]
+
+INFO	2025-09-04T17:40:07,757	13143	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Revoking previously assigned partitions rebalance_experiments-4, rebalance_experiments-5, rebalance_experiments-3
+INFO	2025-09-04T17:40:07,758	13144	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member Az15fLi4S3SFkDGHG6M1ww with epoch 1 transitioned from RECONCILING to ACKNOWLEDGING.
+INFO	2025-09-04T17:40:07,758	13144	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member Az15fLi4S3SFkDGHG6M1ww with epoch 1 transitioned from ACKNOWLEDGING to STABLE.
+INFO	2025-09-04T17:40:12,040	17426	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member hL-Q1CtfSxqafOEOKRMwHg with epoch 2 transitioned from STABLE to RECONCILING.
+INFO	2025-09-04T17:40:13,031	18417	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Reconciling assignment with local epoch 1
+	Member:                                    hL-Q1CtfSxqafOEOKRMwHg
+	Assigned partitions:                       [rebalance_experiments-3, rebalance_experiments-4, rebalance_experiments-5]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [rebalance_experiments-3, rebalance_experiments-4, rebalance_experiments-5]
+	Revoked partitions (owned - assigned):     []
+
+INFO	2025-09-04T17:40:13,031	18417	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member hL-Q1CtfSxqafOEOKRMwHg with epoch 2 transitioned from RECONCILING to ACKNOWLEDGING.
+INFO	2025-09-04T17:40:13,031	18417	org.apache.kafka.clients.consumer.internals.ConsumerMembershipManager	[consumer_background_thread]	[Consumer clientId=ccloud-java-client, groupId=java-group-1] Member hL-Q1CtfSxqafOEOKRMwHg with epoch 2 transitioned from ACKNOWLEDGING to STABLE.
+INFO	2025-09-04T17:40:13,151	18537	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b12-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 12 rack: 0 isFenced: false)], epoch=0}}
+INFO	2025-09-04T17:40:13,151	18537	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-5 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 10 rack: 1 isFenced: false)], epoch=0}}
+INFO	2025-09-04T17:40:13,151	18537	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[consumer_background_thread]	Setting offset for partition rebalance_experiments-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b2-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 2 rack: 2 isFenced: false)], epoch=0}}
+INFO	2025-09-04T17:40:16,659	22045	org.apache.kafka.clients.producer.KafkaProducer	[Thread-1]	[Producer clientId=ccloud-java-client] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.

@@ -19,7 +19,7 @@ dependencies {
 }
 
 ext {
-  javaMainClass = "myapps.OrgsWithEnvs_DSL"
+  javaMainClass = "myapps.RebalanceExperiments"
 }
 
 application {

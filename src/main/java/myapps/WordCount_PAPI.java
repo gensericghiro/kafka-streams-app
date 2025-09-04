@@ -29,7 +29,7 @@ public class WordCount_PAPI {
     Properties props = new Properties();
 
     try {
-      props = Example.readConfig("client.properties");
+      props = SimpleProducerConsumer.readConfig("client.properties");
     } catch (IOException e) {
       e.printStackTrace();
     }
@@ -44,7 +44,7 @@ public class WordCount_PAPI {
     topology.addSource("Source", inputTopic);
 
     // 2. Add a processor node with custom logic and state store access
-    topology.addProcessor("Process", () -> new WordCountProcessor(), "Source");
+    topology.addProcessor("Process", WordCountProcessor::new, "Source");
 
     // 3. Define a state store for word counts
     topology.addStateStore(Stores.keyValueStoreBuilder(
@@ -54,7 +54,6 @@ public class WordCount_PAPI {
 
     // 4. Add a sink node to write results to an output topic
     topology.addSink("Sink", outputTopic, stringSerializer, longSerializer, "Process");
-//    topology.addSink("Sink", outputTopic, stringSerializer, longSerializer, "Process");
 
     KafkaStreams streams = new KafkaStreams(topology, props);
 
@@ -74,14 +73,12 @@ public class WordCount_PAPI {
 
   public static class WordCountProcessor implements Processor<String, String, String, Long> {
 
-//    private KeyValueStore<String, Long> kvStore;
     private KeyValueStore<String, Long> kvStore;
 
     @Override
     public void init(final ProcessorContext<String, Long> context) {
       context.schedule(Duration.ofSeconds(1), PunctuationType.STREAM_TIME, timestamp -> {
         try (final KeyValueIterator<String, Long> iter = kvStore.all()) {
-//          try (final KeyValueIterator<String, Long> iter = kvStore.all()) {
           while (iter.hasNext()) {
             final KeyValue<String, Long> entry = iter.next();
             context.forward(new Record<>(entry.key, entry.value, timestamp));
@@ -98,11 +95,9 @@ public class WordCount_PAPI {
 
       for (final String word : words) {
         final Long oldValue = kvStore.get(word);
-//        final Long oldValue = kvStore.get(word);
 
         if (oldValue == null) {
           System.out.println("Creating entry for word: " + word);
-//          kvStore.put(word, (long) 1);
           kvStore.put(word, (long) 1);
         } else {
           System.out.println("Found entry for word: " + oldValue);

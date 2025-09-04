@@ -33,7 +33,7 @@ public class WordCount_DSL {
 
     Properties props  = new Properties();
     try {
-      props = Example.readConfig("client.properties");
+      props = SimpleProducerConsumer.readConfig("client.properties");
     } catch (IOException e) {
       e.printStackTrace();
     }

@@ -19,7 +19,7 @@ dependencies {
 }
 
 ext {
-  javaMainClass = "myapps.pkcs_to_orgs_DSL"
+  javaMainClass = "myapps.pkcs_to_orgs_PAPI"
 }
 
 application {

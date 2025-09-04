@@ -20,7 +20,7 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class Example {
+public class SimpleProducerConsumer {
     public static void main(String[] args) {
     try {
       String topic = "orgs";
@@ -54,8 +54,8 @@ public class Example {
     config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
     // creates a new producer instance and sends a sample message to the topic
-    String key = "key";
-    String value = "value";
+    String key = "some_key";
+    String value = "some_value";
     Producer<String, String> producer = new KafkaProducer<>(config);
     producer.send(new ProducerRecord<>(topic, key, value));
     System.out.println(

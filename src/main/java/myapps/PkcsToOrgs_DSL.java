@@ -13,14 +13,13 @@ import org.apache.kafka.common.utils.Bytes;
 import org.apache.kafka.streams.*;
 import org.apache.kafka.streams.kstream.*;
 import org.apache.kafka.streams.state.KeyValueStore;
-import org.apache.kafka.streams.state.SessionStore;
 
 import java.io.IOException;
 import java.time.Duration;
 import java.util.*;
 import java.util.concurrent.CountDownLatch;
 
-public class pkcs_to_orgs_DSL {
+public class PkcsToOrgs_DSL {
 
   private static volatile boolean running = true;
 
@@ -37,7 +36,7 @@ public class pkcs_to_orgs_DSL {
 
     Properties props  = new Properties();
     try {
-      props = Example.readConfig("client.properties");
+      props = SimpleProducerConsumer.readConfig("client.properties");
     } catch (IOException e) {
       e.printStackTrace();
     }

@@ -26,7 +26,7 @@ public class WordCount_DSL {
 
   private static volatile boolean running = true;
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) {
 
     String inputTopic = "word_stream_in";
     String outputTopic = "word_count_out";

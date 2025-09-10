@@ -19,7 +19,7 @@ dependencies {
 }
 
 ext {
-  javaMainClass = "myapps.RebalanceExperiments"
+  javaMainClass = "myapps.RebalanceExperiments_KStreams"
 }
 
 application {

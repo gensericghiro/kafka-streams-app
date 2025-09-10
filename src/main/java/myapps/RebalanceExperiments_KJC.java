@@ -19,15 +19,17 @@ import java.util.concurrent.CountDownLatch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class RebalanceExperiments {
+public class RebalanceExperiments_KJC {
   private static volatile boolean running = true;
+
   private static final String topic = "rebalance_experiments";
-  private static final String group_protocol = "consumer";
-//  private static final String group_protocol = "classic";
+
+//  private static final String group_protocol = "consumer";
+  private static final String group_protocol = "classic";
+
   private static final Logger LOGGER = LogManager.getLogger();
 
   public static void main(String[] args) {
-    LOGGER.warn("This is a test");
     Properties props  = new Properties();
     try {
       props = SimpleProducerConsumer.readConfig("client.properties");

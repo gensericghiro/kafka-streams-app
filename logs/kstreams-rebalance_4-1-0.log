@@ -1,0 +1,1753 @@
+INFO	2025-09-10T12:31:57,964	260	org.apache.kafka.common.config.AbstractConfig	[main]	ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transaction.two.phase.commit.enable = false
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+INFO	2025-09-10T12:31:57,975	271	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:57,983	279	org.apache.kafka.clients.producer.KafkaProducer	[main]	[Producer clientId=ccloud-java-client] Instantiated an idempotent producer.
+INFO	2025-09-10T12:31:58,019	315	org.apache.kafka.common.security.authenticator.AbstractLogin	[main]	Successfully logged in.
+INFO	2025-09-10T12:31:58,070	366	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka version: 4.1.0
+INFO	2025-09-10T12:31:58,070	366	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka commitId: 13f70256db3c994c
+INFO	2025-09-10T12:31:58,070	366	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka startTimeMs: 1757521918069
+INFO	2025-09-10T12:31:58,074	370	org.apache.kafka.common.config.AbstractConfig	[main]	ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = pkcToOrg-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	share.acknowledgement.mode = implicit
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO	2025-09-10T12:31:58,078	374	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,096	392	org.apache.kafka.common.config.AbstractConfig	[main]	These configurations '[acks, key.serializer, value.serializer]' were supplied but are not used yet.
+INFO	2025-09-10T12:31:58,096	392	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka version: 4.1.0
+INFO	2025-09-10T12:31:58,097	393	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka commitId: 13f70256db3c994c
+INFO	2025-09-10T12:31:58,097	393	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka startTimeMs: 1757521918096
+INFO	2025-09-10T12:31:58,097	393	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[main]	[Consumer clientId=ccloud-java-client, groupId=pkcToOrg-group] Subscribed to topic(s): pkcs_to_orgs
+INFO	2025-09-10T12:31:58,122	418	org.apache.kafka.common.config.AbstractConfig	[main]	StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = rebalance-experiments-kstreams
+	application.server = 
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = ccloud-java-client
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	dsl.store.suppliers.class = class org.apache.kafka.streams.state.BuiltInDslStoreSuppliers$RocksDBDslStoreSuppliers
+	enable.metrics.push = true
+	ensure.explicit.internal.resource.naming = false
+	group.protocol = classic
+	log.summary.interval.ms = 120000
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.exception.handler = class org.apache.kafka.streams.errors.LogAndFailProcessingExceptionHandler
+	processing.guarantee = at_least_once
+	processor.wrapper.class = class org.apache.kafka.streams.processor.internals.NoOpProcessorWrapper
+	production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = SASL_SSL
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /var/folders/x_/5bhm0y0135xb3p1hp62kcfbr0000gp/T/kafka-streams/rebalance-experiments-kstreams-3df2dc9b-44e9-481d-ac64-f8aa0efecb87
+	statestore.cache.max.bytes = 10485760
+	task.assignor.class = null
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+WARN	2025-09-10T12:31:58,138	434	org.apache.kafka.streams.processor.internals.StateDirectory	[main]	Using an OS temp directory in the state.dir property can cause failures with writing the checkpoint file due to the fact that this directory can be cleared by the OS. Resolved state.dir: [/var/folders/x_/5bhm0y0135xb3p1hp62kcfbr0000gp/T/kafka-streams/rebalance-experiments-kstreams-3df2dc9b-44e9-481d-ac64-f8aa0efecb87]
+INFO	2025-09-10T12:31:58,186	482	org.apache.kafka.streams.processor.internals.StateDirectory	[main]	No process id found on disk, got fresh process id 34dfcfe2-0be9-4c41-ba9c-607aa78744ae
+INFO	2025-09-10T12:31:58,203	499	org.apache.kafka.streams.KafkaStreams	[main]	stream-client [ccloud-java-client] Kafka Streams version: 4.1.0
+INFO	2025-09-10T12:31:58,203	499	org.apache.kafka.streams.KafkaStreams	[main]	stream-client [ccloud-java-client] Kafka Streams commit ID: 13f70256db3c994c
+INFO	2025-09-10T12:31:58,205	501	org.apache.kafka.common.config.AbstractConfig	[main]	AdminClientConfig values: 
+	bootstrap.controllers = []
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+INFO	2025-09-10T12:31:58,211	507	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,214	510	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka version: 4.1.0
+INFO	2025-09-10T12:31:58,214	510	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka commitId: 13f70256db3c994c
+INFO	2025-09-10T12:31:58,215	511	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka startTimeMs: 1757521918214
+INFO	2025-09-10T12:31:58,221	517	org.apache.kafka.streams.processor.internals.StreamThread	[main]	stream-thread [ccloud-java-client-StreamThread-1] Creating restore consumer client
+INFO	2025-09-10T12:31:58,222	518	org.apache.kafka.common.config.AbstractConfig	[main]	ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client-StateUpdater-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	share.acknowledgement.mode = implicit
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+INFO	2025-09-10T12:31:58,222	518	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,225	521	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka version: 4.1.0
+INFO	2025-09-10T12:31:58,225	521	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka commitId: 13f70256db3c994c
+INFO	2025-09-10T12:31:58,225	521	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka startTimeMs: 1757521918225
+INFO	2025-09-10T12:31:58,228	524	org.apache.kafka.common.config.AbstractConfig	[main]	ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client-StreamThread-1-producer
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transaction.two.phase.commit.enable = false
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+INFO	2025-09-10T12:31:58,228	524	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,228	524	org.apache.kafka.clients.producer.KafkaProducer	[main]	[Producer clientId=ccloud-java-client-StreamThread-1-producer] Instantiated an idempotent producer.
+INFO	2025-09-10T12:31:58,232	528	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka version: 4.1.0
+INFO	2025-09-10T12:31:58,232	528	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka commitId: 13f70256db3c994c
+INFO	2025-09-10T12:31:58,232	528	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka startTimeMs: 1757521918232
+INFO	2025-09-10T12:31:58,236	532	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] State updater thread started
+INFO	2025-09-10T12:31:58,238	534	org.apache.kafka.streams.processor.internals.StreamThread	[main]	stream-thread [ccloud-java-client-StreamThread-1] Creating consumer client
+INFO	2025-09-10T12:31:58,240	536	org.apache.kafka.common.config.AbstractConfig	[main]	ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rebalance-experiments-kstreams
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	share.acknowledgement.mode = implicit
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+INFO	2025-09-10T12:31:58,240	536	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,247	543	org.apache.kafka.common.config.AbstractConfig	[main]	These configurations '[replication.factor, probing.rebalance.interval.ms, max.warmup.replicas, acceptable.recovery.lag, task.assignor.class, rack.aware.assignment.non_overlap_cost, application.server, rack.aware.assignment.strategy, rack.aware.assignment.traffic_cost, windowstore.changelog.additional.retention.ms, num.standby.replicas, upgrade.from, rack.aware.assignment.tags, application.id]' were supplied but are not used yet.
+INFO	2025-09-10T12:31:58,247	543	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka version: 4.1.0
+INFO	2025-09-10T12:31:58,247	543	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka commitId: 13f70256db3c994c
+INFO	2025-09-10T12:31:58,247	543	org.apache.kafka.common.utils.AppInfoParser	[main]	Kafka startTimeMs: 1757521918247
+INFO	2025-09-10T12:31:58,252	548	org.apache.kafka.common.config.AbstractConfig	[main]	StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = rebalance-experiments-kstreams
+	application.server = 
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = ccloud-java-client
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	dsl.store.suppliers.class = class org.apache.kafka.streams.state.BuiltInDslStoreSuppliers$RocksDBDslStoreSuppliers
+	enable.metrics.push = true
+	ensure.explicit.internal.resource.naming = false
+	group.protocol = classic
+	log.summary.interval.ms = 120000
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.exception.handler = class org.apache.kafka.streams.errors.LogAndFailProcessingExceptionHandler
+	processing.guarantee = at_least_once
+	processor.wrapper.class = class org.apache.kafka.streams.processor.internals.NoOpProcessorWrapper
+	production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = SASL_SSL
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /var/folders/x_/5bhm0y0135xb3p1hp62kcfbr0000gp/T/kafka-streams/rebalance-experiments-kstreams-ff783eab-4f70-4c98-91a9-feac7489a28e
+	statestore.cache.max.bytes = 10485760
+	task.assignor.class = null
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+WARN	2025-09-10T12:31:58,253	549	org.apache.kafka.streams.processor.internals.StateDirectory	[main]	Using an OS temp directory in the state.dir property can cause failures with writing the checkpoint file due to the fact that this directory can be cleared by the OS. Resolved state.dir: [/var/folders/x_/5bhm0y0135xb3p1hp62kcfbr0000gp/T/kafka-streams/rebalance-experiments-kstreams-ff783eab-4f70-4c98-91a9-feac7489a28e]
+INFO	2025-09-10T12:31:58,253	549	org.apache.kafka.streams.processor.internals.StateDirectory	[main]	No process id found on disk, got fresh process id 23a3cd98-3fb6-423f-b07d-74c3c0065566
+INFO	2025-09-10T12:31:58,254	550	org.apache.kafka.streams.KafkaStreams	[main]	stream-client [ccloud-java-client] Kafka Streams version: 4.1.0
+INFO	2025-09-10T12:31:58,254	550	org.apache.kafka.streams.KafkaStreams	[main]	stream-client [ccloud-java-client] Kafka Streams commit ID: 13f70256db3c994c
+INFO	2025-09-10T12:31:58,254	550	org.apache.kafka.common.config.AbstractConfig	[main]	AdminClientConfig values: 
+	bootstrap.controllers = []
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+INFO	2025-09-10T12:31:58,255	551	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,256	552	org.apache.kafka.common.utils.AppInfoParser	[main]	The mbean of App info: [kafka.admin.client], id: [ccloud-java-client-admin] already exists, so skipping a new mbean creation.
+INFO	2025-09-10T12:31:58,257	553	org.apache.kafka.streams.processor.internals.StreamThread	[main]	stream-thread [ccloud-java-client-StreamThread-1] Creating restore consumer client
+INFO	2025-09-10T12:31:58,257	553	org.apache.kafka.common.config.AbstractConfig	[main]	ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client-StateUpdater-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	share.acknowledgement.mode = implicit
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+INFO	2025-09-10T12:31:58,257	553	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,260	556	org.apache.kafka.common.utils.AppInfoParser	[main]	The mbean of App info: [kafka.consumer], id: [ccloud-java-client-StateUpdater-1-restore-consumer] already exists, so skipping a new mbean creation.
+INFO	2025-09-10T12:31:58,260	556	org.apache.kafka.common.config.AbstractConfig	[main]	ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client-StreamThread-1-producer
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transaction.two.phase.commit.enable = false
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+INFO	2025-09-10T12:31:58,260	556	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,261	557	org.apache.kafka.clients.producer.KafkaProducer	[main]	[Producer clientId=ccloud-java-client-StreamThread-1-producer] Instantiated an idempotent producer.
+INFO	2025-09-10T12:31:58,262	558	org.apache.kafka.common.utils.AppInfoParser	[main]	The mbean of App info: [kafka.producer], id: [ccloud-java-client-StreamThread-1-producer] already exists, so skipping a new mbean creation.
+INFO	2025-09-10T12:31:58,263	559	org.apache.kafka.streams.processor.internals.StreamThread	[main]	stream-thread [ccloud-java-client-StreamThread-1] Creating consumer client
+INFO	2025-09-10T12:31:58,263	559	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] State updater thread started
+INFO	2025-09-10T12:31:58,263	559	org.apache.kafka.common.config.AbstractConfig	[main]	ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = ccloud-java-client-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rebalance-experiments-kstreams
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	share.acknowledgement.mode = implicit
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+INFO	2025-09-10T12:31:58,263	559	org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector	[main]	initializing Kafka metrics collector
+INFO	2025-09-10T12:31:58,266	562	org.apache.kafka.common.config.AbstractConfig	[main]	These configurations '[replication.factor, probing.rebalance.interval.ms, max.warmup.replicas, acceptable.recovery.lag, task.assignor.class, rack.aware.assignment.non_overlap_cost, application.server, rack.aware.assignment.strategy, rack.aware.assignment.traffic_cost, windowstore.changelog.additional.retention.ms, num.standby.replicas, upgrade.from, rack.aware.assignment.tags, application.id]' were supplied but are not used yet.
+INFO	2025-09-10T12:31:58,266	562	org.apache.kafka.common.utils.AppInfoParser	[main]	The mbean of App info: [kafka.consumer], id: [ccloud-java-client-StreamThread-1-consumer] already exists, so skipping a new mbean creation.
+WARN	2025-09-10T12:31:58,269	565	org.apache.kafka.streams.processor.internals.StateDirectory	[main]	stream-thread [main] Failed to delete state store directory of /var/folders/x_/5bhm0y0135xb3p1hp62kcfbr0000gp/T/kafka-streams/rebalance-experiments-kstreams-3df2dc9b-44e9-481d-ac64-f8aa0efecb87/rebalance-experiments-kstreams for it is not empty
+WARN	2025-09-10T12:31:58,269	565	org.apache.kafka.streams.processor.internals.StateDirectory	[main]	stream-thread [main] Failed to delete state store directory of /var/folders/x_/5bhm0y0135xb3p1hp62kcfbr0000gp/T/kafka-streams/rebalance-experiments-kstreams-ff783eab-4f70-4c98-91a9-feac7489a28e/rebalance-experiments-kstreams for it is not empty
+WARN	2025-09-10T12:31:58,269	565	myapps.RebalanceExperiments_KStreams	[main]	Starting stream 1
+INFO	2025-09-10T12:31:58,269	565	org.apache.kafka.streams.KafkaStreams	[main]	stream-client [ccloud-java-client] State transition from CREATED to REBALANCING
+INFO	2025-09-10T12:31:58,270	566	org.apache.kafka.streams.KafkaStreams	[main]	stream-client [ccloud-java-client] Started 1 stream threads
+INFO	2025-09-10T12:31:58,270	566	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Starting
+INFO	2025-09-10T12:31:58,270	566	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from CREATED to STARTING
+INFO	2025-09-10T12:31:58,270	566	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Subscribed to topic(s): orgs, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition
+INFO	2025-09-10T12:31:58,374	670	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Processed 0 total records, ran 0 punctuators, polled 1 times and committed 0 total tasks since the last update 1757521918374ms ago
+INFO	2025-09-10T12:31:59,203	1499	org.apache.kafka.clients.Metadata	[kafka-producer-network-thread | ccloud-java-client-StreamThread-1-producer]	[Producer clientId=ccloud-java-client-StreamThread-1-producer] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-10T12:31:59,203	1499	org.apache.kafka.clients.producer.internals.TransactionManager	[kafka-producer-network-thread | ccloud-java-client-StreamThread-1-producer]	[Producer clientId=ccloud-java-client-StreamThread-1-producer] ProducerId set to 2627001 with epoch 0
+INFO	2025-09-10T12:31:59,203	1499	org.apache.kafka.clients.Metadata	[kafka-producer-network-thread | ccloud-java-client]	[Producer clientId=ccloud-java-client] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-10T12:31:59,203	1499	org.apache.kafka.clients.producer.internals.TransactionManager	[kafka-producer-network-thread | ccloud-java-client]	[Producer clientId=ccloud-java-client] ProducerId set to 2625005 with epoch 0
+INFO	2025-09-10T12:31:59,204	1500	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[kafka-producer-network-thread | ccloud-java-client-StreamThread-1-producer]	Client telemetry registered with client instance id: S0RRJMJdR0yTXXYNGpKlfA
+INFO	2025-09-10T12:31:59,204	1500	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[kafka-producer-network-thread | ccloud-java-client]	Client telemetry registered with client instance id: X1nsRmAASVeSoj6mrn5Www
+INFO	2025-09-10T12:31:59,206	1502	org.apache.kafka.clients.Metadata	[Thread-2]	[Consumer clientId=ccloud-java-client, groupId=pkcToOrg-group] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-10T12:31:59,208	1504	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[Thread-2]	[Consumer clientId=ccloud-java-client, groupId=pkcToOrg-group] Discovered group coordinator b0-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 2147483647 rack: null isFenced: false)
+INFO	2025-09-10T12:31:59,209	1505	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[Thread-2]	Client telemetry registered with client instance id: UAJSCsLZTYugr4qN8JhfIQ
+INFO	2025-09-10T12:31:59,210	1506	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[Thread-2]	[Consumer clientId=ccloud-java-client, groupId=pkcToOrg-group] (Re-)joining group
+INFO	2025-09-10T12:31:59,224	1520	org.apache.kafka.clients.Metadata	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-10T12:31:59,224	1520	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Discovered group coordinator b0-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 2147483647 rack: null isFenced: false)
+INFO	2025-09-10T12:31:59,225	1521	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] (Re-)joining group
+INFO	2025-09-10T12:31:59,226	1522	org.apache.kafka.clients.Metadata	[kafka-producer-network-thread | ccloud-java-client-StreamThread-1-producer]	[Producer clientId=ccloud-java-client-StreamThread-1-producer] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-10T12:31:59,226	1522	org.apache.kafka.clients.producer.internals.TransactionManager	[kafka-producer-network-thread | ccloud-java-client-StreamThread-1-producer]	[Producer clientId=ccloud-java-client-StreamThread-1-producer] ProducerId set to 2627002 with epoch 0
+INFO	2025-09-10T12:31:59,226	1522	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[kafka-producer-network-thread | ccloud-java-client-StreamThread-1-producer]	Client telemetry registered with client instance id: V2kqWj1_QEKbwb2C-bNtfA
+INFO	2025-09-10T12:31:59,228	1524	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[ccloud-java-client-StreamThread-1]	Client telemetry registered with client instance id: XOAULxdyRFiJlHvizaRyXg
+INFO	2025-09-10T12:32:00,162	2458	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[kafka-admin-client-thread | ccloud-java-client-admin]	Client telemetry registered with client instance id: Hi1gPAYUTemxZ4nKuOYPkQ
+INFO	2025-09-10T12:32:00,166	2462	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[Thread-2]	[Consumer clientId=ccloud-java-client, groupId=pkcToOrg-group] Request joining group due to: need to re-join with the given member-id: ccloud-java-client-e5215cae-ab14-4cd5-a86c-2fd84ad9eb8d
+INFO	2025-09-10T12:32:00,166	2462	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[Thread-2]	[Consumer clientId=ccloud-java-client, groupId=pkcToOrg-group] (Re-)joining group
+INFO	2025-09-10T12:32:00,170	2466	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Request joining group due to: need to re-join with the given member-id: ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635
+INFO	2025-09-10T12:32:00,170	2466	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] (Re-)joining group
+INFO	2025-09-10T12:32:00,238	2534	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[kafka-admin-client-thread | ccloud-java-client-admin]	Client telemetry registered with client instance id: 4I5KpsowTuucywaHt7FaQA
+INFO	2025-09-10T12:32:08,409	10705	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully joined group with generation Generation{generationId=24, memberId='ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635', protocol='stream'}
+INFO	2025-09-10T12:32:09,983	12279	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] 1 client nodes and 1 consumers participating in this rebalance: 
+34dfcfe2-0be9-4c41-ba9c-607aa78744ae: [ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635].
+INFO	2025-09-10T12:32:09,984	12280	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assigning stateful tasks: [1_0, 1_5, 1_4, 1_3, 1_2, 1_1]
+and stateless tasks: [0_5, 0_4, 0_3, 0_2, 0_1, 0_0]
+INFO	2025-09-10T12:32:09,984	12280	org.apache.kafka.streams.processor.internals.assignment.AssignorConfiguration	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] No custom task assignors found, defaulting to internal task assignment with internal.task.assignor.class
+INFO	2025-09-10T12:32:09,988	12284	org.apache.kafka.streams.processor.internals.assignment.HighAvailabilityTaskAssignor	[ccloud-java-client-StreamThread-1]	Decided on assignment: {34dfcfe2-0be9-4c41-ba9c-607aa78744ae=[activeTasks: ([0_0, 0_1, 0_2, 0_3, 0_4, 0_5, 1_0, 1_1, 1_2, 1_3, 1_4, 1_5]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=6, 1_1=0, 1_2=4, 1_3=0, 1_4=0, 1_5=6]) clientTags: ([]) capacity: 1 assigned: 12]} with no followup probing rebalance.
+INFO	2025-09-10T12:32:09,988	12284	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assigned 12 total tasks including 6 stateful tasks to 1 client nodes.
+INFO	2025-09-10T12:32:09,988	12284	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assignment of tasks to nodes: 34dfcfe2-0be9-4c41-ba9c-607aa78744ae=[activeTasks: ([0_0, 0_1, 0_2, 0_3, 0_4, 0_5, 1_0, 1_1, 1_2, 1_3, 1_4, 1_5]) standbyTasks: ([])]
+INFO	2025-09-10T12:32:09,990	12286	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Client 34dfcfe2-0be9-4c41-ba9c-607aa78744ae per-consumer assignment:
+	prev owned active {}
+	prev owned standby {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=[]}
+	assigned active {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=[1_0, 0_5, 1_5, 0_4, 1_4, 0_3, 1_3, 0_2, 1_2, 0_1, 1_1, 0_0]}
+	revoking active {}
+	assigned standby {}
+
+INFO	2025-09-10T12:32:09,990	12286	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+INFO	2025-09-10T12:32:09,990	12286	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Finished assignment for group at generation 24: {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=Assignment(partitions=[orgs-0, orgs-1, orgs-2, orgs-3, orgs-4, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5], userDataSize=184)}
+INFO	2025-09-10T12:32:10,112	12408	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully synced group in generation Generation{generationId=24, memberId='ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635', protocol='stream'}
+INFO	2025-09-10T12:32:10,112	12408	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Updating assignment with
+	Assigned partitions:                       [orgs-0, orgs-1, orgs-2, orgs-3, orgs-4, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [orgs-0, orgs-1, orgs-2, orgs-3, orgs-4, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5]
+	Revoked partitions (owned - assigned):     []
+
+INFO	2025-09-10T12:32:10,113	12409	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Notifying assignor about the new Assignment(partitions=[orgs-0, orgs-1, orgs-2, orgs-3, orgs-4, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5], userDataSize=184)
+INFO	2025-09-10T12:32:10,113	12409	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+INFO	2025-09-10T12:32:10,114	12410	org.apache.kafka.streams.processor.internals.TaskManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0, 0_5, 1_5, 0_4, 1_4, 0_3, 1_3, 0_2, 1_2, 0_1, 1_1, 0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+INFO	2025-09-10T12:32:10,133	12429	org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Adding newly assigned partitions: [orgs-0, orgs-1, orgs-2, orgs-3, orgs-4, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5]
+INFO	2025-09-10T12:32:10,133	12429	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+INFO	2025-09-10T12:32:10,193	12489	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_0] Initialized
+INFO	2025-09-10T12:32:10,194	12490	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_0 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:10,296	12592	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-4
+INFO	2025-09-10T12:32:10,296	12592	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-2
+INFO	2025-09-10T12:32:10,296	12592	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-1
+INFO	2025-09-10T12:32:10,296	12592	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1
+INFO	2025-09-10T12:32:10,296	12592	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3
+INFO	2025-09-10T12:32:10,296	12592	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4
+INFO	2025-09-10T12:32:10,646	12942	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:10,649	12945	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_5] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5
+INFO	2025-09-10T12:32:10,649	12945	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_5] Initialized
+INFO	2025-09-10T12:32:10,649	12945	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_5 was added to the state updater
+INFO	2025-09-10T12:32:10,711	13007	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:10,712	13008	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_3] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-3
+INFO	2025-09-10T12:32:10,712	13008	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_3] Initialized
+INFO	2025-09-10T12:32:10,769	13065	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5 initialized as 6.
+INFO	2025-09-10T12:32:10,769	13065	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5
+INFO	2025-09-10T12:32:10,769	13065	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5
+INFO	2025-09-10T12:32:10,772	13068	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:10,773	13069	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_0] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0
+INFO	2025-09-10T12:32:10,773	13069	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_0] Initialized
+INFO	2025-09-10T12:32:10,773	13069	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_5] Initialized
+INFO	2025-09-10T12:32:10,832	13128	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:10,833	13129	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_4] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4
+INFO	2025-09-10T12:32:10,833	13129	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_4] Initialized
+INFO	2025-09-10T12:32:10,833	13129	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_4] Initialized
+INFO	2025-09-10T12:32:10,833	13129	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_3] Initialized
+INFO	2025-09-10T12:32:10,893	13189	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:10,894	13190	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_2] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:10,894	13190	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_2] Initialized
+INFO	2025-09-10T12:32:10,956	13252	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:10,956	13252	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_1] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-1
+INFO	2025-09-10T12:32:10,956	13252	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_1] Initialized
+INFO	2025-09-10T12:32:10,957	13253	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_1] Initialized
+INFO	2025-09-10T12:32:10,957	13253	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_2] Initialized
+INFO	2025-09-10T12:32:11,076	13372	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_0] Restored and ready to run
+INFO	2025-09-10T12:32:11,178	13474	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-0 in order to compute lag
+INFO	2025-09-10T12:32:11,193	13489	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-4
+INFO	2025-09-10T12:32:11,193	13489	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-2
+INFO	2025-09-10T12:32:11,193	13489	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-1
+INFO	2025-09-10T12:32:11,193	13489	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1
+INFO	2025-09-10T12:32:11,193	13489	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3
+INFO	2025-09-10T12:32:11,193	13489	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4
+INFO	2025-09-10T12:32:11,195	13491	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 6 rack: 0 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:11,195	13491	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition orgs-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 8 rack: 2 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:11,195	13491	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition orgs-3 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 11 rack: 2 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:11,195	13491	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0 to the committed offset FetchPosition{offset=14, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b1-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 1 rack: 1 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:11,195	13491	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 9 rack: 0 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:11,195	13491	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition orgs-5 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 6 rack: 0 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:11,729	14025	org.apache.kafka.clients.Metadata	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-10T12:32:11,730	14026	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[ccloud-java-client-StateUpdater-1]	Client telemetry registered with client instance id: 3jroa02aRdesVQVDpXnqaQ
+INFO	2025-09-10T12:32:12,146	14442	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 11 rack: 2 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:12,151	14447	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b2-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 2 rack: 2 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:12,217	14513	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition orgs-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b4-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 4 rack: 1 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:12,217	14513	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b4-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 4 rack: 1 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:12,229	14525	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition orgs-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b1-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 1 rack: 1 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:12,268	14564	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition orgs-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 9 rack: 0 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:12,950	15246	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b0-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 0 rack: 0 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Restoration in progress for 1 partitions. {rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5: position=0, end=6, totalRestored=0}
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_3 was added to the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_0 was added to the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_5 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_4 was added to the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_4 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_3 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_2 was added to the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_1 was added to the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_1 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:13,053	15349	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_2 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0 initialized as 6.
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-1 initialized as 0.
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4 initialized as 0.
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2 initialized as 4.
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-3 initialized as 0.
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-3
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-1
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:13,172	15468	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-3
+INFO	2025-09-10T12:32:13,685	15981	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_5] Restored and ready to run
+INFO	2025-09-10T12:32:13,803	16099	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-4
+INFO	2025-09-10T12:32:13,803	16099	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_4] Restored and ready to run
+INFO	2025-09-10T12:32:13,922	16218	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_3] Restored and ready to run
+INFO	2025-09-10T12:32:14,039	16335	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-1
+INFO	2025-09-10T12:32:14,039	16335	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_1] Restored and ready to run
+INFO	2025-09-10T12:32:14,138	16434	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b13-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 13 rack: 1 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:14,138	16434	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 8 rack: 2 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:14,138	16434	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b5-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 5 rack: 2 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:14,152	16448	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b3-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 3 rack: 0 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:14,152	16448	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b7-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 7 rack: 1 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:14,153	16449	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-1 to store rebalance-experiments-kstreams-store with a total number of 0 records
+INFO	2025-09-10T12:32:14,154	16450	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4 to store rebalance-experiments-kstreams-store with a total number of 0 records
+INFO	2025-09-10T12:32:14,155	16451	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-3 to store rebalance-experiments-kstreams-store with a total number of 0 records
+INFO	2025-09-10T12:32:14,156	16452	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-2
+INFO	2025-09-10T12:32:14,156	16452	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_2] Restored and ready to run
+INFO	2025-09-10T12:32:14,162	16458	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-3
+INFO	2025-09-10T12:32:14,162	16458	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_4 completed restoration
+INFO	2025-09-10T12:32:14,167	16463	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:14,167	16463	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_3 completed restoration
+INFO	2025-09-10T12:32:14,172	16468	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:14,172	16468	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_1 completed restoration
+INFO	2025-09-10T12:32:14,260	16556	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-1 in order to compute lag
+INFO	2025-09-10T12:32:14,261	16557	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-2 in order to compute lag
+INFO	2025-09-10T12:32:14,261	16557	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-3 in order to compute lag
+INFO	2025-09-10T12:32:14,261	16557	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-4 in order to compute lag
+INFO	2025-09-10T12:32:14,261	16557	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-5 in order to compute lag
+INFO	2025-09-10T12:32:14,382	16678	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3
+INFO	2025-09-10T12:32:14,388	16684	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_3] Restored and ready to run
+INFO	2025-09-10T12:32:14,398	16694	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-5 to store rebalance-experiments-kstreams-store with a total number of 5 records
+INFO	2025-09-10T12:32:14,417	16713	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:14,417	16713	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_5 completed restoration
+INFO	2025-09-10T12:32:14,505	16801	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4
+INFO	2025-09-10T12:32:14,511	16807	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_4] Restored and ready to run
+INFO	2025-09-10T12:32:14,537	16833	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0 to store rebalance-experiments-kstreams-store with a total number of 5 records
+INFO	2025-09-10T12:32:14,555	16851	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:14,555	16851	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_0 completed restoration
+INFO	2025-09-10T12:32:14,556	16852	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2 to store rebalance-experiments-kstreams-store with a total number of 4 records
+INFO	2025-09-10T12:32:14,573	16869	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+INFO	2025-09-10T12:32:14,573	16869	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_2 completed restoration
+INFO	2025-09-10T12:32:14,628	16924	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1
+INFO	2025-09-10T12:32:14,633	16929	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_1] Restored and ready to run
+INFO	2025-09-10T12:32:14,634	16930	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1 in order to compute lag
+INFO	2025-09-10T12:32:14,634	16930	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3 in order to compute lag
+INFO	2025-09-10T12:32:14,634	16930	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4 in order to compute lag
+INFO	2025-09-10T12:32:14,758	17054	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_5] Restored and ready to run
+INFO	2025-09-10T12:32:14,882	17178	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_0] Restored and ready to run
+INFO	2025-09-10T12:32:15,004	17300	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_2] Restored and ready to run
+INFO	2025-09-10T12:32:15,004	17300	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+INFO	2025-09-10T12:32:15,005	17301	org.apache.kafka.streams.KafkaStreams	[ccloud-java-client-StreamThread-1]	stream-client [ccloud-java-client] State transition from REBALANCING to RUNNING
+INFO	2025-09-10T12:32:15,007	17303	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0 in order to compute lag
+INFO	2025-09-10T12:32:15,007	17303	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2 in order to compute lag
+INFO	2025-09-10T12:32:15,007	17303	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5 in order to compute lag
+WARN	2025-09-10T12:32:18,274	20570	myapps.RebalanceExperiments_KStreams	[main]	Starting stream 2
+INFO	2025-09-10T12:32:18,274	20570	org.apache.kafka.streams.KafkaStreams	[main]	stream-client [ccloud-java-client] State transition from CREATED to REBALANCING
+INFO	2025-09-10T12:32:18,274	20570	org.apache.kafka.streams.KafkaStreams	[main]	stream-client [ccloud-java-client] Started 1 stream threads
+INFO	2025-09-10T12:32:18,275	20571	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Starting
+INFO	2025-09-10T12:32:18,275	20571	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from CREATED to STARTING
+INFO	2025-09-10T12:32:18,275	20571	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Subscribed to topic(s): orgs, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition
+INFO	2025-09-10T12:32:18,376	20672	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Processed 0 total records, ran 0 punctuators, polled 1 times and committed 0 total tasks since the last update 1757521938377ms ago
+INFO	2025-09-10T12:32:19,238	21534	org.apache.kafka.clients.Metadata	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-10T12:32:19,238	21534	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Discovered group coordinator b0-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 2147483647 rack: null isFenced: false)
+INFO	2025-09-10T12:32:19,239	21535	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] (Re-)joining group
+INFO	2025-09-10T12:32:19,239	21535	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[ccloud-java-client-StreamThread-1]	Client telemetry registered with client instance id: bacgCx9sTr-E_RMSoWRjCg
+INFO	2025-09-10T12:32:20,218	22514	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Request joining group due to: need to re-join with the given member-id: ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089
+INFO	2025-09-10T12:32:20,218	22514	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] (Re-)joining group
+INFO	2025-09-10T12:32:20,624	22920	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Request joining group due to: group is already rebalancing
+INFO	2025-09-10T12:32:20,625	22921	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] (Re-)joining group
+INFO	2025-09-10T12:32:20,743	23039	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully joined group with generation Generation{generationId=25, memberId='ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635', protocol='stream'}
+INFO	2025-09-10T12:32:20,746	23042	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully joined group with generation Generation{generationId=25, memberId='ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089', protocol='stream'}
+INFO	2025-09-10T12:32:21,335	23631	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] 2 client nodes and 2 consumers participating in this rebalance: 
+23a3cd98-3fb6-423f-b07d-74c3c0065566: [ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089]
+34dfcfe2-0be9-4c41-ba9c-607aa78744ae: [ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635].
+INFO	2025-09-10T12:32:21,335	23631	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assigning stateful tasks: [1_0, 1_5, 1_4, 1_3, 1_2, 1_1]
+and stateless tasks: [0_5, 0_4, 0_3, 0_2, 0_1, 0_0]
+INFO	2025-09-10T12:32:21,335	23631	org.apache.kafka.streams.processor.internals.assignment.AssignorConfiguration	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] No custom task assignors found, defaulting to internal task assignment with internal.task.assignor.class
+INFO	2025-09-10T12:32:21,335	23631	org.apache.kafka.streams.processor.internals.assignment.HighAvailabilityTaskAssignor	[ccloud-java-client-StreamThread-1]	Decided on assignment: {23a3cd98-3fb6-423f-b07d-74c3c0065566=[activeTasks: ([0_0, 0_2, 0_4, 1_0, 1_2, 1_4]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=6, 1_1=0, 1_2=4, 1_3=0, 1_4=0, 1_5=6]) clientTags: ([]) capacity: 1 assigned: 6], 34dfcfe2-0be9-4c41-ba9c-607aa78744ae=[activeTasks: ([0_1, 0_3, 0_5, 1_1, 1_3, 1_5]) standbyTasks: ([]) prevActiveTasks: ([0_0, 0_1, 0_2, 0_3, 0_4, 0_5, 1_0, 1_1, 1_2, 1_3, 1_4, 1_5]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([1_0=-2, 1_1=-2, 1_2=-2, 1_3=-2, 1_4=-2, 1_5=-2]) taskLagTotals: ([1_0=-2, 1_1=-2, 1_2=-2, 1_3=-2, 1_4=-2, 1_5=-2]) clientTags: ([]) capacity: 1 assigned: 6]} with no followup probing rebalance.
+INFO	2025-09-10T12:32:21,335	23631	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assigned 12 total tasks including 6 stateful tasks to 2 client nodes.
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assignment of tasks to nodes: 23a3cd98-3fb6-423f-b07d-74c3c0065566=[activeTasks: ([0_0, 0_2, 0_4, 1_0, 1_2, 1_4]) standbyTasks: ([])]
+34dfcfe2-0be9-4c41-ba9c-607aa78744ae=[activeTasks: ([0_1, 0_3, 0_5, 1_1, 1_3, 1_5]) standbyTasks: ([])]
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Client 34dfcfe2-0be9-4c41-ba9c-607aa78744ae per-consumer assignment:
+	prev owned active {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=[1_0, 0_5, 0_4, 1_5, 0_3, 1_4, 0_2, 1_3, 0_1, 1_2, 0_0, 1_1]}
+	prev owned standby {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=[]}
+	assigned active {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=[0_5, 1_5, 0_3, 1_3, 0_1, 1_1]}
+	revoking active {}
+	assigned standby {}
+
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Removing task 1_0 from ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089 active assignment until it is safely revoked in followup rebalance
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Removing task 1_2 from ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089 active assignment until it is safely revoked in followup rebalance
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Removing task 1_4 from ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089 active assignment until it is safely revoked in followup rebalance
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Removing task 0_0 from ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089 active assignment until it is safely revoked in followup rebalance
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Removing task 0_2 from ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089 active assignment until it is safely revoked in followup rebalance
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Removing task 0_4 from ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089 active assignment until it is safely revoked in followup rebalance
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Requesting followup rebalance be scheduled immediately by ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089 due to tasks changing ownership.
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Client 23a3cd98-3fb6-423f-b07d-74c3c0065566 per-consumer assignment:
+	prev owned active {}
+	prev owned standby {ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089=[]}
+	assigned active {ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089=[1_0, 0_4, 1_4, 0_2, 1_2, 0_0]}
+	revoking active {ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089=[1_0, 0_4, 1_4, 0_2, 1_2, 0_0]}
+	assigned standby {}
+
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Finished unstable assignment of tasks, a followup rebalance will be scheduled.
+INFO	2025-09-10T12:32:21,336	23632	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Finished assignment for group at generation 25: {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=Assignment(partitions=[orgs-1, orgs-3, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5], userDataSize=112), ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089=Assignment(partitions=[], userDataSize=40)}
+INFO	2025-09-10T12:32:21,456	23752	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully synced group in generation Generation{generationId=25, memberId='ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635', protocol='stream'}
+INFO	2025-09-10T12:32:21,456	23752	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Updating assignment with
+	Assigned partitions:                       [orgs-1, orgs-3, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5]
+	Current owned partitions:                  [orgs-0, orgs-1, orgs-2, orgs-3, orgs-4, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5]
+	Added partitions (assigned - owned):       []
+	Revoked partitions (owned - assigned):     [orgs-0, orgs-2, orgs-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4]
+
+INFO	2025-09-10T12:32:21,456	23752	org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Revoke previously assigned partitions [orgs-0, orgs-2, orgs-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4]
+INFO	2025-09-10T12:32:21,456	23752	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from RUNNING to PARTITIONS_REVOKED
+INFO	2025-09-10T12:32:21,456	23752	org.apache.kafka.streams.KafkaStreams	[ccloud-java-client-StreamThread-1]	stream-client [ccloud-java-client] State transition from RUNNING to REBALANCING
+INFO	2025-09-10T12:32:21,457	23753	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully synced group in generation Generation{generationId=25, memberId='ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089', protocol='stream'}
+INFO	2025-09-10T12:32:21,458	23754	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Updating assignment with
+	Assigned partitions:                       []
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       []
+	Revoked partitions (owned - assigned):     []
+
+INFO	2025-09-10T12:32:21,458	23754	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Notifying assignor about the new Assignment(partitions=[], userDataSize=40)
+INFO	2025-09-10T12:32:21,458	23754	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Requested to schedule immediate rebalance for new tasks to be safely revoked from current owner.
+INFO	2025-09-10T12:32:21,458	23754	org.apache.kafka.streams.processor.internals.TaskManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Handle new assignment with:
+	New active tasks: []
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+INFO	2025-09-10T12:32:21,458	23754	org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Adding newly assigned partitions: []
+INFO	2025-09-10T12:32:21,458	23754	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+INFO	2025-09-10T12:32:21,506	23802	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+INFO	2025-09-10T12:32:21,506	23802	org.apache.kafka.streams.KafkaStreams	[ccloud-java-client-StreamThread-1]	stream-client [ccloud-java-client] State transition from REBALANCING to RUNNING
+INFO	2025-09-10T12:32:21,509	23805	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Triggering the followup rebalance scheduled for 1969-12-31 19:00:00,000 -05:00.
+INFO	2025-09-10T12:32:21,509	23805	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Request joining group due to: triggered followup rebalance scheduled for 0
+INFO	2025-09-10T12:32:21,509	23805	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] (Re-)joining group
+INFO	2025-09-10T12:32:23,889	26185	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_0] Suspended from RUNNING
+INFO	2025-09-10T12:32:23,889	26185	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_0] Suspended from RUNNING
+INFO	2025-09-10T12:32:23,889	26185	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_4] Suspended from RUNNING
+INFO	2025-09-10T12:32:23,889	26185	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_4] Suspended from RUNNING
+INFO	2025-09-10T12:32:23,890	26186	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_2] Suspended from RUNNING
+INFO	2025-09-10T12:32:23,890	26186	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_2] Suspended from RUNNING
+INFO	2025-09-10T12:32:23,890	26186	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] partition revocation took 2434 ms.
+INFO	2025-09-10T12:32:23,890	26186	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Request joining group due to: need to revoke partitions [orgs-0, orgs-2, orgs-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4] as indicated by the current assignment and re-join
+INFO	2025-09-10T12:32:23,890	26186	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Notifying assignor about the new Assignment(partitions=[orgs-1, orgs-3, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5], userDataSize=112)
+INFO	2025-09-10T12:32:23,890	26186	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+INFO	2025-09-10T12:32:23,890	26186	org.apache.kafka.streams.processor.internals.TaskManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_5, 1_5, 0_3, 1_3, 0_1, 1_1]
+	New standby tasks: []
+	Existing active tasks: [1_0, 0_5, 1_5, 0_4, 1_4, 0_3, 1_3, 0_2, 1_2, 0_1, 0_0, 1_1]
+	Existing standby tasks: []
+INFO	2025-09-10T12:32:23,891	26187	org.apache.kafka.streams.processor.internals.RecordCollectorImpl	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [0_0] Closing record collector clean
+INFO	2025-09-10T12:32:23,891	26187	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_0] Closed clean
+INFO	2025-09-10T12:32:23,891	26187	org.apache.kafka.streams.processor.internals.RecordCollectorImpl	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [0_2] Closing record collector clean
+INFO	2025-09-10T12:32:23,891	26187	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_2] Closed clean
+INFO	2025-09-10T12:32:23,892	26188	org.apache.kafka.streams.processor.internals.RecordCollectorImpl	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [0_4] Closing record collector clean
+INFO	2025-09-10T12:32:23,892	26188	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_4] Closed clean
+INFO	2025-09-10T12:32:23,893	26189	org.apache.kafka.streams.processor.internals.RecordCollectorImpl	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_0] Closing record collector clean
+INFO	2025-09-10T12:32:23,894	26190	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_0] Closed clean
+INFO	2025-09-10T12:32:23,895	26191	org.apache.kafka.streams.processor.internals.RecordCollectorImpl	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_2] Closing record collector clean
+INFO	2025-09-10T12:32:23,895	26191	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_2] Closed clean
+INFO	2025-09-10T12:32:23,896	26192	org.apache.kafka.streams.processor.internals.RecordCollectorImpl	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_4] Closing record collector clean
+INFO	2025-09-10T12:32:23,896	26192	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_4] Closed clean
+INFO	2025-09-10T12:32:23,896	26192	org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Adding newly assigned partitions: []
+INFO	2025-09-10T12:32:23,896	26192	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from PARTITIONS_REVOKED to PARTITIONS_ASSIGNED
+INFO	2025-09-10T12:32:23,896	26192	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] (Re-)joining group
+INFO	2025-09-10T12:32:23,898	26194	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+INFO	2025-09-10T12:32:23,899	26195	org.apache.kafka.streams.KafkaStreams	[ccloud-java-client-StreamThread-1]	stream-client [ccloud-java-client] State transition from REBALANCING to RUNNING
+INFO	2025-09-10T12:32:24,037	26333	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully joined group with generation Generation{generationId=26, memberId='ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635', protocol='stream'}
+INFO	2025-09-10T12:32:24,040	26336	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully joined group with generation Generation{generationId=26, memberId='ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089', protocol='stream'}
+INFO	2025-09-10T12:32:24,636	26932	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] 2 client nodes and 2 consumers participating in this rebalance: 
+23a3cd98-3fb6-423f-b07d-74c3c0065566: [ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089]
+34dfcfe2-0be9-4c41-ba9c-607aa78744ae: [ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635].
+INFO	2025-09-10T12:32:24,636	26932	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assigning stateful tasks: [1_0, 1_5, 1_4, 1_3, 1_2, 1_1]
+and stateless tasks: [0_5, 0_4, 0_3, 0_2, 0_1, 0_0]
+INFO	2025-09-10T12:32:24,636	26932	org.apache.kafka.streams.processor.internals.assignment.AssignorConfiguration	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] No custom task assignors found, defaulting to internal task assignment with internal.task.assignor.class
+INFO	2025-09-10T12:32:24,636	26932	org.apache.kafka.streams.processor.internals.assignment.HighAvailabilityTaskAssignor	[ccloud-java-client-StreamThread-1]	Decided on assignment: {23a3cd98-3fb6-423f-b07d-74c3c0065566=[activeTasks: ([0_0, 0_2, 0_4, 1_0, 1_2, 1_4]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=7, 1_1=0, 1_2=5, 1_3=0, 1_4=0, 1_5=7]) clientTags: ([]) capacity: 1 assigned: 6], 34dfcfe2-0be9-4c41-ba9c-607aa78744ae=[activeTasks: ([0_1, 0_3, 0_5, 1_1, 1_3, 1_5]) standbyTasks: ([]) prevActiveTasks: ([0_1, 0_3, 0_5, 1_1, 1_3, 1_5]) prevStandbyTasks: ([1_0, 1_2, 1_4]) changelogOffsetTotalsByTask: ([1_0=6, 1_1=-2, 1_2=4, 1_3=-2, 1_4=0, 1_5=-2]) taskLagTotals: ([1_0=1, 1_1=-2, 1_2=1, 1_3=-2, 1_4=0, 1_5=-2]) clientTags: ([]) capacity: 1 assigned: 6]} with no followup probing rebalance.
+INFO	2025-09-10T12:32:24,637	26933	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assigned 12 total tasks including 6 stateful tasks to 2 client nodes.
+INFO	2025-09-10T12:32:24,637	26933	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Assignment of tasks to nodes: 23a3cd98-3fb6-423f-b07d-74c3c0065566=[activeTasks: ([0_0, 0_2, 0_4, 1_0, 1_2, 1_4]) standbyTasks: ([])]
+34dfcfe2-0be9-4c41-ba9c-607aa78744ae=[activeTasks: ([0_1, 0_3, 0_5, 1_1, 1_3, 1_5]) standbyTasks: ([])]
+INFO	2025-09-10T12:32:24,637	26933	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Client 34dfcfe2-0be9-4c41-ba9c-607aa78744ae per-consumer assignment:
+	prev owned active {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=[0_5, 1_5, 0_3, 1_3, 0_1, 1_1]}
+	prev owned standby {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=[1_0, 1_4, 1_2]}
+	assigned active {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=[0_5, 1_5, 0_3, 1_3, 0_1, 1_1]}
+	revoking active {}
+	assigned standby {}
+
+INFO	2025-09-10T12:32:24,637	26933	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Client 23a3cd98-3fb6-423f-b07d-74c3c0065566 per-consumer assignment:
+	prev owned active {}
+	prev owned standby {ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089=[]}
+	assigned active {ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089=[1_0, 0_4, 1_4, 0_2, 1_2, 0_0]}
+	revoking active {}
+	assigned standby {}
+
+INFO	2025-09-10T12:32:24,637	26933	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+INFO	2025-09-10T12:32:24,637	26933	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Finished assignment for group at generation 26: {ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635=Assignment(partitions=[orgs-1, orgs-3, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5], userDataSize=112), ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089=Assignment(partitions=[orgs-0, orgs-2, orgs-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4], userDataSize=112)}
+INFO	2025-09-10T12:32:24,757	27053	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully synced group in generation Generation{generationId=26, memberId='ccloud-java-client-StreamThread-1-consumer-b8d7b189-11df-4fda-9adb-cc4b2ea67635', protocol='stream'}
+INFO	2025-09-10T12:32:24,757	27053	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Updating assignment with
+	Assigned partitions:                       [orgs-1, orgs-3, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5]
+	Current owned partitions:                  [orgs-1, orgs-3, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5]
+	Added partitions (assigned - owned):       []
+	Revoked partitions (owned - assigned):     []
+
+INFO	2025-09-10T12:32:24,757	27053	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Notifying assignor about the new Assignment(partitions=[orgs-1, orgs-3, orgs-5, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-1, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-3, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-5], userDataSize=112)
+INFO	2025-09-10T12:32:24,757	27053	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+INFO	2025-09-10T12:32:24,757	27053	org.apache.kafka.streams.processor.internals.TaskManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_5, 1_5, 0_3, 1_3, 0_1, 1_1]
+	New standby tasks: []
+	Existing active tasks: [0_5, 1_5, 0_3, 1_3, 0_1, 1_1]
+	Existing standby tasks: []
+INFO	2025-09-10T12:32:24,757	27053	org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Adding newly assigned partitions: []
+INFO	2025-09-10T12:32:24,757	27053	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from RUNNING to PARTITIONS_ASSIGNED
+INFO	2025-09-10T12:32:24,757	27053	org.apache.kafka.streams.KafkaStreams	[ccloud-java-client-StreamThread-1]	stream-client [ccloud-java-client] State transition from RUNNING to REBALANCING
+INFO	2025-09-10T12:32:24,759	27055	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Successfully synced group in generation Generation{generationId=26, memberId='ccloud-java-client-StreamThread-1-consumer-91ef74e4-172b-457b-8ece-8fdf3f90b089', protocol='stream'}
+INFO	2025-09-10T12:32:24,759	27055	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Updating assignment with
+	Assigned partitions:                       [orgs-0, orgs-2, orgs-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [orgs-0, orgs-2, orgs-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4]
+	Revoked partitions (owned - assigned):     []
+
+INFO	2025-09-10T12:32:24,759	27055	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Notifying assignor about the new Assignment(partitions=[orgs-0, orgs-2, orgs-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4], userDataSize=112)
+INFO	2025-09-10T12:32:24,759	27055	org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+INFO	2025-09-10T12:32:24,760	27056	org.apache.kafka.streams.processor.internals.TaskManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0, 0_4, 1_4, 0_2, 1_2, 0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+INFO	2025-09-10T12:32:24,763	27059	org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Adding newly assigned partitions: [orgs-0, orgs-2, orgs-4, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4]
+INFO	2025-09-10T12:32:24,763	27059	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from RUNNING to PARTITIONS_ASSIGNED
+INFO	2025-09-10T12:32:24,763	27059	org.apache.kafka.streams.KafkaStreams	[ccloud-java-client-StreamThread-1]	stream-client [ccloud-java-client] State transition from RUNNING to REBALANCING
+INFO	2025-09-10T12:32:24,834	27130	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_4] Initialized
+INFO	2025-09-10T12:32:24,834	27130	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_2] Initialized
+INFO	2025-09-10T12:32:24,834	27130	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_4 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:24,834	27130	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_2 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:24,839	27135	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+INFO	2025-09-10T12:32:24,842	27138	org.apache.kafka.streams.KafkaStreams	[ccloud-java-client-StreamThread-1]	stream-client [ccloud-java-client] State transition from REBALANCING to RUNNING
+INFO	2025-09-10T12:32:24,894	27190	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:24,894	27190	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_4] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4
+INFO	2025-09-10T12:32:24,894	27190	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_4] Initialized
+INFO	2025-09-10T12:32:24,894	27190	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_4 was added to the state updater
+INFO	2025-09-10T12:32:24,939	27235	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-4
+INFO	2025-09-10T12:32:24,939	27235	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-2
+INFO	2025-09-10T12:32:24,939	27235	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4
+INFO	2025-09-10T12:32:24,958	27254	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:24,958	27254	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_0] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0
+INFO	2025-09-10T12:32:24,958	27254	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_0] Initialized
+INFO	2025-09-10T12:32:24,958	27254	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_0] Initialized
+INFO	2025-09-10T12:32:25,019	27315	org.apache.kafka.streams.state.internals.RocksDBTimestampedStore	[ccloud-java-client-StreamThread-1]	Opening store rebalance-experiments-kstreams-store in regular mode
+INFO	2025-09-10T12:32:25,019	27315	org.apache.kafka.streams.processor.internals.ProcessorStateManager	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] stream-task [1_2] State store rebalance-experiments-kstreams-store did not find checkpoint offset, hence would default to the starting offset at changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:25,019	27315	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_2] Initialized
+INFO	2025-09-10T12:32:25,141	27437	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-4
+INFO	2025-09-10T12:32:25,142	27438	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_4] Restored and ready to run
+INFO	2025-09-10T12:32:25,264	27560	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-2
+INFO	2025-09-10T12:32:25,264	27560	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_2] Restored and ready to run
+INFO	2025-09-10T12:32:25,365	27661	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-2 in order to compute lag
+INFO	2025-09-10T12:32:25,365	27661	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-4 in order to compute lag
+INFO	2025-09-10T12:32:25,386	27682	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-4
+INFO	2025-09-10T12:32:25,386	27682	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition orgs-2
+INFO	2025-09-10T12:32:25,386	27682	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4
+INFO	2025-09-10T12:32:25,386	27682	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition orgs-0 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 8 rack: 2 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:25,386	27682	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0 to the committed offset FetchPosition{offset=22, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b1-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 1 rack: 1 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:25,386	27682	org.apache.kafka.clients.consumer.internals.ConsumerUtils	[ccloud-java-client-StreamThread-1]	Setting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 9 rack: 0 isFenced: false)], epoch=0}}
+INFO	2025-09-10T12:32:25,976	28272	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4 initialized as 0.
+INFO	2025-09-10T12:32:25,976	28272	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4
+INFO	2025-09-10T12:32:25,976	28272	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4
+INFO	2025-09-10T12:32:26,326	28622	org.apache.kafka.clients.consumer.internals.SubscriptionState	[kafka-coordinator-heartbeat-thread | rebalance-experiments-kstreams]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition orgs-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b4-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 4 rack: 1 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:26,328	28624	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition orgs-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 9 rack: 0 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:26,337	28633	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b2-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 2 rack: 2 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:26,943	29239	org.apache.kafka.clients.Metadata	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Cluster ID: lkc-devc2zm25o
+INFO	2025-09-10T12:32:26,944	29240	org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter	[ccloud-java-client-StateUpdater-1]	Client telemetry registered with client instance id: ByNkzXbcSfyQQrswTl27WQ
+INFO	2025-09-10T12:32:27,890	30186	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b13-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 13 rack: 1 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:27,990	30286	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-4 to store rebalance-experiments-kstreams-store with a total number of 0 records
+INFO	2025-09-10T12:32:27,997	30293	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+INFO	2025-09-10T12:32:27,997	30293	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_4 completed restoration
+INFO	2025-09-10T12:32:27,997	30293	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_0 was added to the state updater
+INFO	2025-09-10T12:32:27,997	30293	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateless active task 0_0 was added to the restored tasks of the state updater
+INFO	2025-09-10T12:32:27,997	30293	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_2 was added to the state updater
+INFO	2025-09-10T12:32:28,132	30428	org.apache.kafka.clients.consumer.internals.ConsumerCoordinator	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Found no committed offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4
+INFO	2025-09-10T12:32:28,138	30434	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_4] Restored and ready to run
+INFO	2025-09-10T12:32:28,259	30555	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [0_0] Restored and ready to run
+INFO	2025-09-10T12:32:28,360	30656	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for orgs-0 in order to compute lag
+INFO	2025-09-10T12:32:28,361	30657	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-4 in order to compute lag
+INFO	2025-09-10T12:32:29,085	31381	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0 initialized as 7.
+INFO	2025-09-10T12:32:29,085	31381	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] End offset for changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2 initialized as 5.
+INFO	2025-09-10T12:32:29,085	31381	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0, rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:29,085	31381	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0
+INFO	2025-09-10T12:32:29,085	31381	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Seeking to AutoOffsetResetStrategy{type=earliest} offset of partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2
+INFO	2025-09-10T12:32:30,040	32336	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b3-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 3 rack: 0 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:30,041	32337	org.apache.kafka.clients.consumer.internals.SubscriptionState	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Resetting offset for partition rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b5-pkc-devcw59ry9.centralus.azure.devel.cpdev.cloud:9092 (id: 5 rack: 2 isFenced: false)], epoch=0}}.
+INFO	2025-09-10T12:32:30,142	32438	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Restoration in progress for 2 partitions. {rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0: position=0, end=7, totalRestored=0} {rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2: position=0, end=5, totalRestored=0}
+INFO	2025-09-10T12:32:30,414	32710	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-2 to store rebalance-experiments-kstreams-store with a total number of 5 records
+INFO	2025-09-10T12:32:30,436	32732	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Assigned to partition(s): rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0
+INFO	2025-09-10T12:32:30,436	32732	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_2 completed restoration
+INFO	2025-09-10T12:32:30,437	32733	org.apache.kafka.streams.processor.internals.StoreChangelogReader	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Finished restoring changelog rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-changelog-0 to store rebalance-experiments-kstreams-store with a total number of 6 records
+INFO	2025-09-10T12:32:30,455	32751	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StateUpdater-1]	[Consumer clientId=ccloud-java-client-StateUpdater-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+INFO	2025-09-10T12:32:30,455	32751	org.apache.kafka.streams.processor.internals.DefaultStateUpdater	[ccloud-java-client-StateUpdater-1]	state-updater [ccloud-java-client-StateUpdater-1] Stateful active task 1_0 completed restoration
+INFO	2025-09-10T12:32:30,622	32918	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_0] Restored and ready to run
+INFO	2025-09-10T12:32:30,750	33046	org.apache.kafka.streams.processor.internals.StreamTask	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] task [1_2] Restored and ready to run
+INFO	2025-09-10T12:32:30,750	33046	org.apache.kafka.streams.processor.internals.StreamThread	[ccloud-java-client-StreamThread-1]	stream-thread [ccloud-java-client-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+INFO	2025-09-10T12:32:30,750	33046	org.apache.kafka.streams.KafkaStreams	[ccloud-java-client-StreamThread-1]	stream-client [ccloud-java-client] State transition from REBALANCING to RUNNING
+INFO	2025-09-10T12:32:30,850	33146	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-0 in order to compute lag
+INFO	2025-09-10T12:32:30,850	33146	org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer	[ccloud-java-client-StreamThread-1]	[Consumer clientId=ccloud-java-client-StreamThread-1-consumer, groupId=rebalance-experiments-kstreams] Requesting the log end offset for rebalance-experiments-kstreams-rebalance-experiments-kstreams-store-repartition-2 in order to compute lag
+INFO	2025-09-10T12:32:38,007	40303	org.apache.kafka.clients.producer.KafkaProducer	[Thread-1]	[Producer clientId=ccloud-java-client] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+INFO	2025-09-10T12:32:38,007	40303	org.apache.kafka.streams.KafkaStreams	[streams-shutdown-hook]	stream-client [ccloud-java-client] State transition from RUNNING to PENDING_SHUTDOWN
